@@ -33,7 +33,7 @@ Update the `3-music-collection.js` file to do the following:
   - Console.log the number of items in the array.
   - Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
 
-- Test the `showCollection` function.
+- Test the `showCollection` function.fuT, 
 
 - Add a function named `findByArtist`. This function should:
   - Take in `artist` (a string) parameter
