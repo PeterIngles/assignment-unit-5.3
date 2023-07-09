@@ -28,6 +28,24 @@ function showCollection(musicCollection){
         console.log(`${album.title} by ${album.artist} published in ${album.yearPublished}`)
     }
 }
-//Created a function to loop over the collection then display the albums information
+//Created a function to loop over the collection then display the collection and albums information
 
 showCollection(musicCollection)
+//Testing the showCollection function
+
+function findByArtist(artist){
+    const results = [];
+    for (let album of musicCollection){
+        if (album.artist === artist){
+            results.push(album);
+        }
+    }
+    return results;
+}
+// Created a function to loop over the collection and add all albums byt the searched artist to an array.
+
+console.log("Albums by Phoebe Bridgers", findByArtist('Phoebe Bridgers'));
+console.log("Albums by Run the Jewels", findByArtist('Run the Jewels'));
+console.log("Albums by The Replacements", findByArtist('The Replacements'));
+
+//Tested the findByArtist function
